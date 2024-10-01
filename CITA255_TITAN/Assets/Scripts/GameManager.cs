@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,13 +22,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            SwitchScene();
+        }
+    }
+
     public void HelloWorld()
     {
         Debug.Log("Hello, Scene 2. -ArrayWithOffset love, Scene1");
     }
-    
+
     void SwitchScene()
     {
-
+        SceneManager.LoadScene("Scene2");
     }
 }
