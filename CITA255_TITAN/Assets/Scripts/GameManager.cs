@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void HelloWorld()
     {
-        Debug.Log("Hello, Scene 2. -ArrayWithOffset love, Scene1");
+        Debug.Log("Hello, Scene 2. love, Scene1");
     }
 
     void SwitchScene()
