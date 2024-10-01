@@ -24,12 +24,19 @@ public class TestScript : MonoBehaviour
         {
             Debug.Log("I am a specific exception! Put me befor egeneral exception!");
             Debug.Log(nullRef.Message + nullRef.StackTrace);
+            return;
         }
 
         catch(Exception exception)
         {
             Debug.Log("cATCHING AN EXCEPTION!!");
             Debug.Log(exception.Message + exception.StackTrace);
+            return;
+        }
+        
+        finally
+        {
+            Debug.Log("LOL, I'll always run and there is no way you can get rid of me.");
         }
 
         // catch
