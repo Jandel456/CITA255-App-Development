@@ -13,7 +13,7 @@ public class PomoUses : MonoBehaviour
 {
     public TextMeshProUGUI totalTimeSpentText;
     List<int> totalTimeSpentList = new List<int>();
-    string totalTimeSpentString, currentTimeSpentString;
+    string totalTimeSpentString;
     int currentTimeSpent = 0;
     public int CurrentTimeSpent 
     {
@@ -27,8 +27,6 @@ public class PomoUses : MonoBehaviour
     private void Start() 
     {
         totalTimeSpentString = "Total Minutes Worked:  ";
-        currentTimeSpentString = "Current Time Spent: ";
-
         CurrentTimeSpent = 0;
     }
 
@@ -36,8 +34,6 @@ public class PomoUses : MonoBehaviour
     {
         totalTimeSpentList.Add(currentTimeSpent);
         CurrentTimeSpent = 0;
-        UpdateTotalTimeSpentText();
-
         // CurrentScore++;
         // Debug.Log("Current Score is" + CurrentScore);
     }
