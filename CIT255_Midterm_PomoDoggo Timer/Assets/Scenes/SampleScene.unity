@@ -357,8 +357,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 605437928}
-  - component: {fileID: 605437929}
   - component: {fileID: 605437930}
+  - component: {fileID: 605437932}
   - component: {fileID: 605437931}
   m_Layer: 0
   m_Name: PomodoroManager
@@ -382,18 +382,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1406770682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &605437929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605437927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b2e0768b7625214d817cac564b5b082, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &605437930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,6 +492,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &605437932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605437927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808329b420c0f614891ff413e334386b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTimeSpentText: {fileID: 1356152309}
 --- !u!1 &862046947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,9 +1837,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 1951649300}
+  StartTime: 1500
   remainingtime: 1500
   PomoUsesText: {fileID: 156917442}
   PomoUses: 1
+  Minutes: 0
 --- !u!82 &1951649304
 AudioSource:
   m_ObjectHideFlags: 0
