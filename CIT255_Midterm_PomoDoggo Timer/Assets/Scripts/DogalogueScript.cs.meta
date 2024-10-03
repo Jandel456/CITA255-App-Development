@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 80435d56072b65344a1b65d092359e3b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SmalllBark: {fileID: 8300000, guid: 83a2b7112da4ffd4a8b871e472488ea4, type: 3}
+  - DogText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
